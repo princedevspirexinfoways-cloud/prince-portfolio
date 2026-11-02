@@ -10,7 +10,10 @@ export default function Cursor() {
 
   useEffect(() => {
     const move = (e: MouseEvent) => { x.set(e.clientX); y.set(e.clientY) }
+    let last: Element | null = null
     const over = (e: MouseEvent) => {
+      if (e.target === last) return
+      last = e.target as Element
       const el = (e.target as HTMLElement).closest('a, button, [data-hover]') as HTMLElement | null
       setHover(el ? el.dataset.hover ?? '' : null)
     }

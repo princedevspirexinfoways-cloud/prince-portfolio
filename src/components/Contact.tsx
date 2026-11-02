@@ -21,7 +21,8 @@ export default function Contact() {
         <h2 className="contact-title">
           <span className="line"><span>Let's build</span></span>
           <span className="line"><span className="outline">something</span></span>
-          <span className="line"><span>that <span className="accent">scales.</span></span></span>
+          <span className="line"><span>that</span></span>
+          <span className="line"><span className="accent">scales.</span></span>
         </h2>
         <div className="contact-row">
           <div>
