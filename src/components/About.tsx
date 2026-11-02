@@ -21,7 +21,9 @@ export default function About() {
         onUpdate: () => { el.textContent = Math.round(obj.v) + (el.dataset.suffix ?? '') },
       })
     })
-    gsap.to('.about-canvas', { yPercent: -20, scrollTrigger: { trigger: scope.current, start: 'top bottom', end: 'bottom top', scrub: true } })
+    gsap.matchMedia().add('(min-width: 961px)', () => {
+      gsap.to('.about-canvas', { yPercent: -20, scrollTrigger: { trigger: scope.current, start: 'top bottom', end: 'bottom top', scrub: true } })
+    })
   }, { scope })
 
   return (
