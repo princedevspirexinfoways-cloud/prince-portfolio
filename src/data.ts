@@ -2,8 +2,9 @@ export const profile = {
   name: 'Prince Sherasiya',
   first: 'Prince',
   last: 'Sherasiya',
-  role: 'Technical Lead · Backend & DevOps',
-  tagline: 'I architect backends that scale, pipelines that ship, and teams that deliver.',
+  role: 'Backend Developer · Rajkot, Gujarat',
+  title: 'Technical Lead · Backend & DevOps',
+  tagline: 'Backend developer based in Rajkot, Gujarat. I architect backends that scale, pipelines that ship, and teams that deliver.',
   email: 'princesherasiya1@gmail.com',
   phone: '+91 91062 04250',
   phoneRaw: '+919106204250',
@@ -14,7 +15,7 @@ export const profile = {
   resume: '/Prince-Sherasiya-Resume.pdf',
 }
 
-export const about = `I'm a backend-first engineer who grew from a Node.js intern into a Technical Lead in just over two years. I design system architecture, own CI/CD and infrastructure, and mentor the people who build alongside me. Today I lead Backend & DevOps at Spirex Infoways and serve part-time as CTO of an AI startup, where I turn product ideas into reliable, scalable systems.`
+export const about = `I'm a backend developer from Rajkot, Gujarat who grew from a Node.js intern into a Technical Lead in just over two years. I design system architecture, own CI/CD and infrastructure, and mentor the people who build alongside me. Today I lead Backend & DevOps at Spirex Infoways and serve part-time as CTO of an AI startup, where I turn product ideas into reliable, scalable systems.`
 
 export const stats = [
   { value: 2, suffix: '+', label: 'Years of experience' },

@@ -343,6 +343,7 @@ section { position: relative; padding: clamp(90px, 12vw, 170px) 0; }
 .contact-email:hover::after { transform: scaleX(1); transform-origin: left; }
 .contact-meta { color: var(--muted); font-size: 14px; letter-spacing: 0.1em; margin-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
 .contact-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.contact-seo { color: var(--muted); font-size: 14px; line-height: 1.6; max-width: 480px; margin-top: 18px; }
 .magnetic { display: inline-block; }
 
 /* ---------- footer ---------- */

@@ -31,6 +31,7 @@ export default function Contact() {
               <a href={`tel:${profile.phoneRaw}`}>{profile.phone}</a>
               <span>{profile.location}</span>
             </div>
+            <p className="contact-seo">Available for backend development in Rajkot, across Gujarat, and remote: Node.js APIs, TypeScript services, database design and CI/CD pipelines.</p>
           </div>
           <div className="contact-btns">
             <Magnetic><a className="btn solid" href={`mailto:${profile.email}`}>Email me <ArrowIcon /></a></Magnetic>
@@ -41,7 +42,7 @@ export default function Contact() {
         </div>
       </div>
       <footer className="footer">
-        <span>© 2026 <b>Prince Sherasiya</b></span>
+        <span>© 2026 <b>Prince Sherasiya</b> · Backend Developer, Rajkot</span>
         <span>Built with React · GSAP · Framer Motion · Three.js</span>
         <button className="footer-top" onClick={() => scrollTo(0)} data-hover="Top">Back to top <i><span style={{ display: 'inline-block', transform: 'rotate(-45deg)', width: 16 }}><ArrowIcon /></span></i></button>
       </footer>

@@ -54,7 +54,7 @@ export default function Hero({ ready }: { ready: boolean }) {
             <br />
             <span className="outline"><Split text={profile.last} charClass="hero-char" /></span>
           </h1>
-          <p className="hero-sub">{profile.tagline} Currently leading Backend & DevOps at Spirex Infoways and serving as CTO at Nameless AI.</p>
+          <p className="hero-sub">{profile.tagline} Currently {profile.title} at Spirex Infoways, Rajkot, and CTO at Nameless AI.</p>
           <div className="hero-ctas">
             <a className="btn solid" href="#projects" onClick={(e) => { e.preventDefault(); scrollTo('#projects') }} data-hover="View">
               See my work <ArrowIcon />
@@ -76,7 +76,7 @@ export default function Hero({ ready }: { ready: boolean }) {
             <div className="hero-photo-ring" />
             <div className="hero-photo-ring second" />
             <div className="hero-photo-clip">
-              <img src="/prince.png" alt="Prince Sherasiya" />
+              <img src="/prince.png" alt="Prince Sherasiya, backend developer in Rajkot, Gujarat" width="1366" height="768" fetchPriority="high" />
               <div className="hero-photo-tint" />
             </div>
             <div className="hero-photo-caption">
