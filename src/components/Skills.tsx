@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { gsap, useGSAP } from '../lib/gsap'
 import { skills } from '../data'
 import { Heading, TiltCard } from './ui'
+import { SkillIcon } from './icons'
 
 export default function Skills() {
   const scope = useRef<HTMLElement>(null)
@@ -13,6 +14,7 @@ export default function Skills() {
     gsap.utils.toArray<HTMLElement>('.skill-bar i').forEach((bar) => {
       gsap.fromTo(bar, { width: 0 }, { width: bar.dataset.level + '%', duration: 1.6, ease: 'expo.out', scrollTrigger: { trigger: bar, start: 'top 92%' } })
     })
+    gsap.from('.skill-icon', { scale: 0, rotate: -90, duration: 0.9, ease: 'back.out(2)', stagger: 0.07, delay: 0.25, scrollTrigger: { trigger: '.skills-grid', start: 'top 85%' } })
     gsap.to('.skills-bg', { xPercent: -25, scrollTrigger: { trigger: scope.current, start: 'top bottom', end: 'bottom top', scrub: true } })
   }, { scope })
 
@@ -28,6 +30,7 @@ export default function Skills() {
                 <div className="skill-card" data-hover="">
                   <span className="skill-big">{String(i + 1).padStart(2, '0')}</span>
                   <div>
+                    <SkillIcon name={s.name} />
                     <span className="skill-tag">{s.tag}</span>
                     <h3 className="skill-name">{s.name}</h3>
                   </div>
