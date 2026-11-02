@@ -47,7 +47,7 @@ export default function Hero({ ready }: { ready: boolean }) {
       <div className="hero-glow" />
       <HeroScene />
       <div className="container hero-grid">
-        <div>
+        <div className="hero-copy">
           <span className="eyebrow hero-eyebrow">{profile.role}</span>
           <h1 className="hero-title" aria-label={profile.name}>
             <Split text={profile.first} charClass="hero-char" />
